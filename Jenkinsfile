@@ -8,6 +8,11 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Start') {
+            steps {
+                bat 'npm start'
+            }
+        }
         stage('Teste') {
             steps {
                 bat '''set NO_COLOR=1
