@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Start') {
             steps {
-                bat 'start /b npm start'
+                bat 'npm start'
             }
         }
         stage('Teste') {
